@@ -88,7 +88,7 @@ exports.postSignup = (req, res, next) => {
       req.logIn(user, (err) => {
         if (err) {
           return next(err)
-        };
+        }
         res.redirect('/todos');
       })
     })
